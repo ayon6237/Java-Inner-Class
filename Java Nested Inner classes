@@ -1,0 +1,16 @@
+//java inner class 
+//Nested Inner class
+class OuterClass{
+    class Innerclass{
+        public void Show(){
+            System.out.println("Heyy!! How are you");
+        }
+    }
+}
+
+public class Test{
+    public static void main(String []args){
+        OuterClass.Innerclass obj = new OuterClass().new Innerclass();
+        obj.Show();
+    }
+}
