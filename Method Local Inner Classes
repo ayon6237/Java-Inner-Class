@@ -1,0 +1,25 @@
+//Method Local Inner Classes 
+class Outer{
+    public void outerMethod(){
+        System.out.println("A heavy sunny day");
+
+
+
+        class inner{
+            public void innerMethod(){
+                System.out.println("A cloudy day");
+            }
+        }
+
+        inner y = new inner();
+        y.innerMethod();
+    }   
+}
+
+
+public class Test{
+    public static void main(String[] args) {
+        Outer x = new Outer();
+        x.outerMethod();
+    }
+}
