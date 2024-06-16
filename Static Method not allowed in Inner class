@@ -1,0 +1,14 @@
+//We can not have a static method in a inner class
+class OuterClass{
+    public void dispaly(){
+        System.out.println("Have a nice day");
+    }
+
+    class InnerClass{
+        public static void main(String[] args) {
+            System.out.println("Have a nice dream");
+        }
+
+        //The code will generrate error......................
+    }
+}
